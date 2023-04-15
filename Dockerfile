@@ -27,7 +27,7 @@
 # EXPOSE 80
 
 # Use an official Node.js runtime as a parent image
-FROM node:16.20.0 as build
+FROM node:14.16.0 as build
 # Set the working directory to /app
 WORKDIR /app
 # Copy package.json and package-lock.json to the working directory

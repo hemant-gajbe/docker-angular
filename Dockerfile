@@ -36,8 +36,8 @@ COPY package*.json ./
 RUN npm install --force
 # Copy the rest of the application to the working directory
 COPY . .
-# For docker 
-ENV NODE_OPTIONS=--openssl-legacy-provider
+# For docker node version > 17
+# ENV NODE_OPTIONS=--openssl-legacy-provider
 # Build the application
 RUN npm run build
 # Expose port 80
